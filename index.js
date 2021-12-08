@@ -4,24 +4,19 @@ class Car {
         this.model = model
         this.year = year
     }
-}
-
-honk () {
-    console.log ('BEEP BEEP!')
-}
-
-performMaintenance () {
-    setTimeout (function() {
-        console.log ('maintenance complete')
-    } , 3000)
+    honk () {
+        console.log ('BEEP BEEP!')
+    }
+    
+    performMaintenance () {
+        setTimeout (function() {
+            console.log ('maintenance complete')
+        } , 3000)
+    }
 }
 
 var mySweetRide = new Car ('Pontiac', 'Fiero', 1988)
 
-console.log (honk)
+mySweetRide.honk()
 
-honk()
-
-console.log (performMaintenance)
-
-performMaintenance()
+mySweetRide.performMaintenance()
